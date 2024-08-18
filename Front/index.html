@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Todo App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        #todo-list {
-            margin: 20px 0;
-        }
-        .todo-item {
-            padding: 10px;
-            margin-bottom: 5px;
-            border: 1px solid #ccc;
-        }
-        .actions {
-            margin-left: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Todo List</h1>
-    <div id="todo-list"></div>
 
-    <h2>Add New Todo</h2>
-    <input type="text" id="new-todo-title" placeholder="Enter todo title">
-    <button onclick="addTodo()">Add Todo</button>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div id="todo-list"></div>
+
+        <h2>Add New Todo</h2>
+        <div class="input-container">
+            <input type="text" id="new-todo-title" placeholder="Enter todo title">
+            <button onclick="addTodo()">Add Todo</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Simple Todo App By Omar Abbas</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
