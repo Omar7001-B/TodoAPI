@@ -1,6 +1,6 @@
 # Todo API
 
-A simple Todo API built with Express.js that allows you to create, read, update, and delete (CRUD) todos stored in a JSON file.
+A simple Todo API built with Express.js that allows you to create, read, update, and delete (CRUD) todos stored in a JSON file. This project also includes a frontend interface to interact with the API.
 
 ## Prerequisites
 
@@ -28,17 +28,21 @@ A simple Todo API built with Express.js that allows you to create, read, update,
 
 ## Usage
 
-1. Run the application:
+### Backend
+
+1. **Run the Backend Server**
+
+   Start the backend server by running:
 
    ```bash
    node main.js
    ```
 
-2. The server will start on `http://localhost:3000`.
+   The server will start on `http://localhost:3000`.
 
-3. You can now use the following endpoints:
+2. **Endpoints**
 
-   ### Endpoints
+   You can use the following API endpoints:
 
    - **GET /todos**: Retrieve all todos.
    - **GET /todos/:id**: Retrieve a specific todo by ID.
@@ -47,11 +51,23 @@ A simple Todo API built with Express.js that allows you to create, read, update,
    - **PUT /todos/:id**: Update a todo completely.
    - **DELETE /todos/:id**: Delete a specific todo by ID.
 
-4. **Debugging Logs**: To log requests to a file, you can run the server with:
+3. **Debugging Logs**
+
+   To log requests to a file, you can run the server with:
 
    ```bash
    node main.js >> log.txt
    ```
+
+### Frontend
+
+1. **Open the Frontend**
+
+   After starting the backend server, open the frontend in your web browser by navigating to the appropriate URL (e.g., `http://localhost:3000` if the frontend is served from the same port).
+
+2. **Interact with the API**
+
+   Use the frontend interface to add, view, update, and delete todos. The frontend interacts with the backend API to simulate an actual todo list.
 
 ## Notes
 
@@ -60,7 +76,7 @@ A simple Todo API built with Express.js that allows you to create, read, update,
 
 ## Example Request
 
-To add a new todo:
+To add a new todo using `curl`:
 
 ```bash
 curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"id": 2, "title": "New Todo"}'
