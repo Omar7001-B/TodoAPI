@@ -59,6 +59,3 @@ node main.js >> log.txt
 - Todos are stored in `todos.json` and persist between server restarts.
 - Ensure `todos.json` is valid JSON.
 
-## License
-
-MIT License
