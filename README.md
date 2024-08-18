@@ -4,7 +4,6 @@ A simple Todo API built with Express.js that allows you to create, read, update,
 
 ## Prerequisites
 
-- Node.js (v12+)
 - npm
 
 ## Installation
