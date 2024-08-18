@@ -82,6 +82,8 @@ To add a new todo using `curl`:
 curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"id": 2, "title": "New Todo"}'
 ```
 
-## License
+## DEMO VIDEO
 
-This project is licensed under the MIT License.
+
+https://github.com/user-attachments/assets/e08d05c1-64cc-4c69-8904-86bc8e38e054
+
