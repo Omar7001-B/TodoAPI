@@ -31,10 +31,8 @@ This is a basic Todo application with a clean, centered design. It allows users 
 - CSS
 - JavaScript
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any questions or issues, please reach out to [your email] or open an issue on the project repository.
+For any questions or issues, please reach out.
