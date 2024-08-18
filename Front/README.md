@@ -11,7 +11,7 @@ This is a basic Todo application with a clean, centered design. It allows users 
    Before you can view the app, make sure to start the backend server. run the following command:
 
    ```bash
-   node main.js
+   npm run start
    ```
 
    Or if you're using a different server setup, follow the appropriate steps to start it.
