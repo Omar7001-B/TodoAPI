@@ -1,8 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const todosFileName = "./todos.json";
 
 app.use(express.json());
+app.options("*", cors()); // Preflight request handling
+app.use(cors()); // This allows all origins
 
 // Data
 let fs = require("fs");
