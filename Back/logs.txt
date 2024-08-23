@@ -63,3 +63,4 @@ Request to create new todo: {"id":1724012554757,"title":"Task2"}
 Request to get all todos
 Request to delete todo with id: 1724012550718
 Request to get all todos
+Server is running on port 3000
