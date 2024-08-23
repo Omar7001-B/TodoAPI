@@ -2,6 +2,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "mongoose": "^8.5.3",
     "morgan": "^1.10.0"
   },
   "name": "todoscruds",
@@ -9,7 +10,7 @@
   "description": "Todos List Created By Omar Abbas.",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js >> logs.txt",
+    "start": "nodemon main.js",
     "dev": "nodemon main.js",
     "test": "test_api.bat"
   },

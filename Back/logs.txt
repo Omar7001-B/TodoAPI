@@ -64,3 +64,38 @@ Request to get all todos
 Request to delete todo with id: 1724012550718
 Request to get all todos
 Server is running on port 3000
+Server is running on port 3000
+Request to get all todos
+Request to create new todo: {"id":1724418406120,"title":""}
+Request to get all todos
+Request to create new todo: {"id":1724418409664,"title":"Hola"}
+Request to get all todos
+Request to delete todo with id: 1724418406120
+Request to get all todos
+Server is running on port 3000
+Connected to MongoDB
+Request to get all todos
+Server is running on port 3000
+Connected to MongoDB
+Request to create new todo: {"title":"Ahmed"}
+Request to create new todo: {"title":"Ahmed"}
+Request to create new todo: {"title":"Ahmed"}
+Request to create new todo: {"title":"Ahmeddddd"}
+Server is running on port 3000
+Connected to MongoDB
+Server is running on port 3000
+MongoDB connected
+Server is running on port 3000
+MongoDB connected
+Request to create new todo: {"title":"Ahme2332ddddd"}
+Request to create new todo: {"title":"Ahme2332ddddd"}
+Request to create new todo: {"title":"Task1"}
+Request to get all todos
+Request to get all todos
+Server is running on port 3000
+MongoDB connected
+Request to get all todos
+Request to create new todo: {"title":"Task2"}
+Request to get all todos
+Request to create new todo: {"title":"Task2"}
+Request to get todo with id: 66c8a621db86b8955c2e1ea3

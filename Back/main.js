@@ -1,28 +1,22 @@
 const express = require("express");
 const cors = require("cors");
-const {
-  getTodos,
-  getTodoById,
-  createTodo,
-  updateTodoPatch,
-  updateTodoPut,
-  deleteTodo,
-} = require("./todos.js");
+const mongoose = require("mongoose");
+const todoRoutes = require("./routes/todoRoutes");
+
 const app = express();
 
+// Middleware
 app.use(express.json());
-app.options("*", cors()); // Preflight request handling
-app.use(cors()); // This allows all origins
+app.use(cors());
+
+// Connect to MongoDB
+mongoose
+  .connect("mongodb://localhost:27017/taskSchoolManager")
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 // Routes
-app.get("/todos", getTodos);
-app.get("/todos/:id", getTodoById);
-app.post("/todos", createTodo);
-app.patch("/todos/:id", updateTodoPatch);
-app.put("/todos/:id", updateTodoPut);
-app.delete("/todos/:id", deleteTodo);
+app.use("/todos", todoRoutes);
 
 // Start the server
-app.listen(3000, function () {
-  console.log("Server is running on port 3000");
-});
+app.listen(3000, () => console.log("Server is running on port 3000"));
