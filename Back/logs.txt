@@ -12,3 +12,54 @@ Server is running on port 3000
 Server is running on port 3000
 Server is running on port 3000
 Request to get all todos
+Server is running on port 3000
+Request to get all todos
+Request to create new todo: {"id":1724011502173,"title":"Do Homework"}
+Request to get all todos
+Request to create new todo: {"id":1724011512740,"title":"Eat Breakfast"}
+Request to get all todos
+Request to update using patch method: 1724011502173, {"title":"Don't do Homework"}
+Request to get all todos
+Request to delete todo with id: 1724011502173
+Request to get all todos
+Request to get all todos
+Request to get all todos
+Request to get all todos
+Request to create new todo: {"id":1724012453413,"title":""}
+Request to get all todos
+Request to delete todo with id: 1724012453413
+Request to get all todos
+Request to create new todo: {"id":1724012465381,"title":"Study React"}
+Request to get all todos
+Request to update using patch method: 1724012465381, {"title":"Study React EDITEDDDDD"}
+Request to get all todos
+Request to create new todo: {"id":1724012490549,"title":""}
+Request to get all todos
+Request to delete todo with id: 1724012490549
+Request to get all todos
+Request to delete todo with id: 1724012465381
+Request to get all todos
+Request to create new todo: {"id":1724012503549,"title":"Study React"}
+Request to get all todos
+Request to update using patch method: 1724012503549, {"title":"Study React Editeddddd"}
+Request to get all todos
+Request to create new todo: {"id":1724012530141,"title":"Task1"}
+Request to get all todos
+Request to delete todo with id: 3
+Request to get all todos
+Request to delete todo with id: 2
+Request to get all todos
+Request to delete todo with id: 1724009615988
+Request to get all todos
+Request to delete todo with id: 1724010276052
+Request to get all todos
+Request to create new todo: {"id":1724012544013,"title":""}
+Request to get all todos
+Request to delete todo with id: 1724012544013
+Request to get all todos
+Request to create new todo: {"id":1724012550718,"title":"Task1"}
+Request to get all todos
+Request to create new todo: {"id":1724012554757,"title":"Task2"}
+Request to get all todos
+Request to delete todo with id: 1724012550718
+Request to get all todos
