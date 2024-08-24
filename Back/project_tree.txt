@@ -1,0 +1,32 @@
+Models Directory
+===================
+Folder PATH listing for volume Work
+Volume serial number is 0000005F 94B2:CBDB
+E:\COMPUTER SCIENCE\COMMUNITY\DEPI\WEB\REACT-WEBDEV-DEPI\PROJECTS\TODOSCRUDS\BACK\MODELS
+    todoModel.js
+    userModel.js
+    
+No subfolders exist 
+
+
+Controllers Directory
+=======================
+Folder PATH listing for volume Work
+Volume serial number is 000000BB 94B2:CBDB
+E:\COMPUTER SCIENCE\COMMUNITY\DEPI\WEB\REACT-WEBDEV-DEPI\PROJECTS\TODOSCRUDS\BACK\CONTROLLERS
+    todoController.js
+    userController.js
+    
+No subfolders exist 
+
+
+Routes Directory
+================
+Folder PATH listing for volume Work
+Volume serial number is 000000BF 94B2:CBDB
+E:\COMPUTER SCIENCE\COMMUNITY\DEPI\WEB\REACT-WEBDEV-DEPI\PROJECTS\TODOSCRUDS\BACK\ROUTES
+    todoRoutes.js
+    userRoutes.js
+    
+No subfolders exist 
+

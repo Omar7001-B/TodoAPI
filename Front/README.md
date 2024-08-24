@@ -2,17 +2,35 @@
 
 ## Overview
 
-This is a basic Todo application with a clean, centered design. It allows users to add and view todos. 
+This is a basic Todo application with a clean, centered design. It allows users to add and view todos.
+
+## Project Structure
+
+~~~
+Simple Todo App
+│
+├── Models
+│   ├── todoModel.js
+│   └── userModel.js
+│
+├── Controllers
+│   ├── todoController.js
+│   └── userController.js
+│
+└── Routes
+    ├── todoRoutes.js
+    └── userRoutes.js
+~~~
 
 ## Getting Started
 
 1. **Run the Server**
 
-   Before you can view the app, make sure to start the backend server. run the following command:
+   Before you can view the app, make sure to start the backend server. Run the following command:
 
-   ```bash
+   ~~~bash
    npm run start
-   ```
+   ~~~
 
    Or if you're using a different server setup, follow the appropriate steps to start it.
 
@@ -30,8 +48,9 @@ This is a basic Todo application with a clean, centered design. It allows users 
 - HTML
 - CSS
 - JavaScript
-
-
+- Node.js
+- Express.js
+- MongoDB (or any other database used in your setup)
 
 ## Contact
 
