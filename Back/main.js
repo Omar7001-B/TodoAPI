@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const todoRoutes = require("./routes/todoRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 
@@ -17,6 +18,7 @@ mongoose
 
 // Routes
 app.use("/todos", todoRoutes);
+app.use("/users", userRoutes);
 
 // Start the server
 app.listen(3000, () => console.log("Server is running on port 3000"));

@@ -1,6 +1,6 @@
+// models/todoModel.js
 const mongoose = require("mongoose");
 
-// Schema for todo
 const todosSchema = mongoose.Schema({
   title: {
     type: String,
@@ -14,6 +14,11 @@ const todosSchema = mongoose.Schema({
     type: String,
     enum: ["done", "in progress", "todo"],
     default: "todo",
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User", // Reference to the User model
+    required: true,
   },
 });
 

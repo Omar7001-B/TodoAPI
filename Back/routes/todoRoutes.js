@@ -11,7 +11,7 @@ const {
 
 const router = express.Router();
 
-router.get("/", getTodos);
+router.get("/user/:id", getTodos);
 router.post("/", createTodo);
 router.get("/:id", getTodoById);
 router.patch("/:id", updateTodoPatch);

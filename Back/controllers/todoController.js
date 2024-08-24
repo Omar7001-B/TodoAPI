@@ -10,10 +10,9 @@ function debugLog(message) {
 
 // Handlers
 async function getTodos(req, res) {
+  let userId = req.params.id; // Expecting the user ID to be passed as a query parameter
   try {
-    debugLog("Request to get all todos");
-    const todos = await todosModel.find(); // Use .find() to fetch all documents
-    console.log("Todos: ", todos);
+    const todos = await todosModel.find({ user: userId });
     res.json(todos);
   } catch (err) {
     res.json({ message: "Error fetching todos", error: err });
@@ -37,8 +36,9 @@ async function getTodoById(req, res) {
 
 async function createTodo(req, res) {
   let body = req.body;
+  body.user = req.body.user; // Assuming the user ID is sent in the request body
+  debugLog("Request to create new todo: " + JSON.stringify(body));
   try {
-    debugLog("Request to create new todo: " + JSON.stringify(body));
     const newTodo = await todosModel.create(body);
     res.json({ message: "Todo created", todo: newTodo });
   } catch (err) {
