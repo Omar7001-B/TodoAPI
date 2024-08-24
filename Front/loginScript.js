@@ -33,3 +33,34 @@ async function handleLogin(event) {
     alert("An error occurred. Please try again.");
   }
 }
+
+// Handle signup
+async function handleSignup(event) {
+  event.preventDefault();
+
+  const { username, email, password } = Object.fromEntries(
+    new FormData(event.target).entries()
+  );
+
+  if (![username, email, password].every((field) => field.trim())) {
+    return alert("Please fill in all fields.");
+  }
+
+  try {
+    const response = await fetch("http://localhost:3000/users/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, email, password }),
+    });
+
+    const result = await response.json();
+    alert(
+      result.message === "User created"
+        ? "Sign up successful!"
+        : "Sign up failed: " + result.message
+    );
+  } catch (error) {
+    console.error("Error during signup:", error);
+    alert("An error occurred. Please try again.");
+  }
+}
